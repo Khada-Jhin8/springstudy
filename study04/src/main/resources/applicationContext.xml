@@ -12,6 +12,6 @@
     <bean id="log" class="vip.zhguo.Log_"></bean>
     <aop:config>
         <aop:pointcut id="pointcut" expression="execution(* vip.zhguo.Landlady.*(..))"/>
-        <aop:advisor advice-ref="log" pointcut-ref="pointcut"/>
+        <aop:advisor advice-ref="log" pointcut-ref="pointcut"></aop:advisor>
     </aop:config>
 </beans>
