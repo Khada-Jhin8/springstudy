@@ -3,11 +3,12 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
-
-    <bean id="mysqlDao" class="daoImpl.MysqlDaoImpl"></bean>
+    <bean id="mysqlDao" class="daoImpl.MysqlDaoImpl" ></bean>
     <bean id="oraclelDao" class="daoImpl.OracleDao"></bean>
+<!--    <bean id="userService" class="serviceImpl.UserServiceImpl">-->
+<!--        <property name="dao" ref="oraclelDao"></property>-->
+<!--    </bean>-->
     <bean id="userService" class="serviceImpl.UserServiceImpl">
-        <property name="dao" ref="oraclelDao"></property>
+        <constructor-arg type="dao.Dao" ref="mysqlDao"></constructor-arg>
     </bean>
-
 </beans>

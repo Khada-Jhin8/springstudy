@@ -6,6 +6,15 @@ import service.UserService;
 public class UserServiceImpl implements UserService {
     private Dao dao;
 
+//    public UserServiceImpl() {
+//        System.out.println("UserServiceImpl无参构造器被调用");
+//       }
+
+    public UserServiceImpl(Dao dao) {
+        System.out.println("UserServiceImpl有参构造器被调用");
+        this.dao = dao;
+    }
+
     public void setDao(Dao dao) {
         this.dao = dao;
     }
