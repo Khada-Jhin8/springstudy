@@ -11,6 +11,7 @@
     <modules>
         <module>study01</module>
         <module>study03</module>
+        <module>study04</module>
     </modules>
 
     <properties>
@@ -23,6 +24,17 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-web</artifactId>
             <version>5.3.17</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-aop -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aop</artifactId>
+            <version>5.3.18</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>5.3.10</version>
         </dependency>
 
     </dependencies>
