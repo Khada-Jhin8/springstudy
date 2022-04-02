@@ -1,3 +1,5 @@
+package static_;
+
 public class Proxy_ implements Rent{
     private Landlady Landlady;
 

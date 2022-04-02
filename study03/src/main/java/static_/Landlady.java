@@ -1,3 +1,5 @@
+package static_;
+
 public class Landlady implements Rent{
     @Override
     public void toRent() {
